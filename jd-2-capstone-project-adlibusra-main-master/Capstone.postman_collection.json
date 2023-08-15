@@ -1,0 +1,2758 @@
+{
+	"info": {
+		"_postman_id": "0fd00cdc-8fe2-4d49-b573-8152681c50c5",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14960512",
+		"_collection_link": "https://lunar-rocket-357161.postman.co/workspace/New-Team-Workspace~50566e03-6e67-4f97-8f3d-8b5b01136207/collection/14960512-0fd00cdc-8fe2-4d49-b573-8152681c50c5?action=share&creator=14960512&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Airlines",
+			"item": [
+				{
+					"name": "getairlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/airlines",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airlines"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getairlines",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/airlines",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airlines"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "HEADER",
+									"value": "Header value"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jul 2023 15:40:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"airlineName\": \"AnadoluJet\"\n    },\n    {\n        \"id\": 2,\n        \"airlineName\": \"Onur Air\"\n    },\n    {\n        \"id\": 3,\n        \"airlineName\": \"Pegasus Hava Yolları\"\n    },\n    {\n        \"id\": 4,\n        \"airlineName\": \"SunExpress\"\n    },\n    {\n        \"id\": 5,\n        \"airlineName\": \"Türk Hava Yolları\"\n    },\n    {\n        \"id\": 6,\n        \"airlineName\": \"AtlasGlobal\"\n    },\n    {\n        \"id\": 7,\n        \"airlineName\": \"BoraJet\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "airlines",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"airlineName\": \"Türk Hava Yolları\",\r\n    \"description\":\"Türk Hava Yolları\"\r\n   \r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/airlines",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airlines"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"airlineName\": \"BoraJet2\",\r\n    \"description\":\"BoraJet\",\r\n    \"active\":true\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/airlines",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airlines"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jul 2023 19:13:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"BoraJet2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/airlines/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airlines",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/airlines/4",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airlines",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 02 Aug 2023 09:05:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "searchailine",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"airlineName\": \"Pegasus\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/airlines/search",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airlines",
+								"search"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "searchairline",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"airlineName\": \"Pegasus\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/airlines/search",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airlines",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 03 Aug 2023 08:29:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"id\": 2,\n        \"airlineName\": \"Pegasus\",\n        \"active\": true\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "/search2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/airlines/search2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airlines",
+								"search2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/airlines/search2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airlines",
+										"search2"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 19:13:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"about:blank\",\n    \"title\": \"Bad Request\",\n    \"status\": 400,\n    \"detail\": \"Failed to read request\",\n    \"instance\": \"/api/airlines/search2\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "cities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityName\": \"Ankara\",\r\n    \"description\":\"\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/cities",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cityex",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cityName\": \"Van\",\r\n    \"description\":\"\"\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/cities",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jul 2023 07:57:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cityName\": \"Van\",\n    \"description\": \"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getcities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/cities",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/cities",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jul 2023 19:19:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityName\": \"Adana\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 2,\n        \"cityName\": \"Adıyaman\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 3,\n        \"cityName\": \"Ankara\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 4,\n        \"cityName\": \"Antalya\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 5,\n        \"cityName\": \"Balıkesir\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 6,\n        \"cityName\": \"Diyarbakır\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 7,\n        \"cityName\": \"Edirne\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 8,\n        \"cityName\": \"Eskişehir\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 9,\n        \"cityName\": \"Gaziantep\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 10,\n        \"cityName\": \"İstanbul\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 11,\n        \"cityName\": \"Kayseri\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 12,\n        \"cityName\": \"Muğla\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 13,\n        \"cityName\": \"Nevşehir\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 14,\n        \"cityName\": \"Samsun\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 15,\n        \"cityName\": \"Trabzon\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 16,\n        \"cityName\": \"Van\",\n        \"description\": \"\"\n    },\n    {\n        \"id\": 17,\n        \"cityName\": \"Zonguldak\",\n        \"description\": \"\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "search?",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/cities/search?cityName=Ankara",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"cities",
+										"search"
+									],
+									"query": [
+										{
+											"key": "cityName",
+											"value": "Ankara"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 11:56:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": \"no message available.\",\n    \"data\": [\n        {\n            \"cityName\": \"Ankara\",\n            \"description\": \"\"\n        }\n    ],\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Airport",
+			"item": [
+				{
+					"name": "airports",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"airportName\": \"İstanbul Havaalanı\",\r\n    \"shortCodeName\":\"IST\",\r\n    \"cityId\":10\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/airports",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airports"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"airportName\": \"İstanbul Havaalanı\",\r\n    \"shortCodeName\":\"IST\",\r\n    \"cityId\":10\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/airports",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airports"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jul 2023 19:21:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"airportName\": \"İstanbul Havaalanı\",\n    \"shortCodeName\": \"IST\"\n}"
+						}
+					]
+				},
+				{
+					"name": "airports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/airports",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airports"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "airports",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/airports",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airports"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jul 2023 19:37:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"airportName\": \"Sabiha\",\n        \"shortCodeName\": \"SAW\",\n        \"city\": {\n            \"id\": 1,\n            \"cityName\": \"Adana\",\n            \"description\": \"\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"airportName\": \"İstanbul Havaalanı\",\n        \"shortCodeName\": \"IST\",\n        \"city\": {\n            \"id\": 10,\n            \"cityName\": \"İstanbul\",\n            \"description\": \"\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "airports/search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"airportName\": \"İstanbul Havaalanı\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/airports/search",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airports",
+								"search"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "airports/search",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"airportName\": \"İstanbul Havaalanı\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/airports/search",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"airports",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 03 Aug 2023 08:30:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"airportName\": \"İstanbul Havaalanı\",\n        \"shortCodeName\": \"IST\",\n        \"city\": \"İstanbul\"\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Route",
+			"item": [
+				{
+					"name": "routes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"routeName\": \"Sabiha-Adana\",\r\n    \"fromAirport\":4,\r\n\"toAirport\":7\r\n      \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/routes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"routes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "routes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"routeName\": \"istanbul-Adıyaman\",\r\n    \"fromAirport\":2,\r\n\"toAirport\":1\r\n      \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/routes/1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"routes",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Aug 2023 00:00:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"routeName\": \"adıyaman-istanbul\",\n    \"fromAirport\": \"Adıyaman Havalimanı\",\n    \"toAirport\": \"İstanbul Havaalanı\"\n}"
+						},
+						{
+							"name": "routes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"routeName\": \"Sabiha-Adana\",\r\n    \"fromAirport\":4,\r\n\"toAirport\":7\r\n      \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/routes",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"routes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 23:05:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"routeName\": \"Sabiha-Adana\",\n    \"fromAirport\": {\n        \"id\": 4,\n        \"airportName\": \"Sabiha Gökçen\",\n        \"shortCodeName\": \"SAW\",\n        \"city\": {\n            \"id\": 10,\n            \"cityName\": \"İstanbul\",\n            \"description\": \"\"\n        }\n    },\n    \"toAirport\": {\n        \"id\": 7,\n        \"airportName\": \"Adana Şakirpaşa Havalimanı\",\n        \"shortCodeName\": \"Adana\",\n        \"city\": {\n            \"id\": 1,\n            \"cityName\": \"Adana\",\n            \"description\": \"\"\n        },\n        \"active\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/routes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"routes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"routeName\": \"ad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/routes/search",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"routes",
+								"search"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fromAirport\":{\r\n        \"airportName\":\"ad\",\r\n        \"shortCodeName\": \" \"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/routes/search",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"routes",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 19:42:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": \"no message available.\",\n    \"data\": [\n        {\n            \"routeName\": \"adıyaman-istanbul\",\n            \"fromAirport\": \"Adıyaman Havalimanı\",\n            \"toAirport\": \"İstanbul Havaalanı\"\n        },\n        {\n            \"routeName\": \"istanbul-Adıyaman\",\n            \"fromAirport\": \"İstanbul Havaalanı\",\n            \"toAirport\": \"Adıyaman Havalimanı\"\n        }\n    ],\n    \"isSuccess\": true\n}"
+						},
+						{
+							"name": "/search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"routeName\": \"ad\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/routes/search",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"routes",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 23:58:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": \"no message available.\",\n    \"data\": [\n        {\n            \"routeName\": \"Sabiha-Adana\",\n            \"fromAirport\": \"Sabiha Gökçen Havaalanı\",\n            \"toAirport\": \"Esenboğa\"\n        }\n    ],\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PlaneBrand",
+			"item": [
+				{
+					"name": "planeBrand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"AIRBUS\"\r\n\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/planeBrand",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"planeBrand"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "planeBrand",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"AIRBUS\"\r\n\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/planeBrand",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"planeBrand"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 23:19:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"planeBrandName\": \"AIRBUS\"\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PlaneBrandModel",
+			"item": [
+				{
+					"name": "BrandModel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Airbus A330\",\r\n    \"planeBrand\": 2\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/brandModel",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"brandModel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "brandModel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Boeing 737\",\r\n    \"planeBrand\": 1\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/brandModel",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"brandModel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Aug 2023 12:29:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"brandName\": \"BOEING\"\n}"
+						}
+					]
+				},
+				{
+					"name": "brandModel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/brandModel",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"brandModel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/brandModel",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"brandModel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Aug 2023 21:10:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": \"no message available.\",\n    \"data\": [\n        {\n            \"brandName\": \"Boeing 737\",\n            \"brandModelName\": \"Boeing 737\"\n        },\n        {\n            \"brandName\": \"Boeing 747\",\n            \"brandModelName\": \"Boeing 747\"\n        },\n        {\n            \"brandName\": \"Airbus A319\",\n            \"brandModelName\": \"Airbus A319\"\n        },\n        {\n            \"brandName\": \"Airbus A330\",\n            \"brandModelName\": \"Airbus A330\"\n        }\n    ],\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Plane",
+			"item": [
+				{
+					"name": "planes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"planeName\": \"İstanbul\",\r\n    \"seatNumber\":500,\r\n    \"planeBrandId\":1\r\n\r\n\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/planes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"planes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"planeName\": \"İstanbul\",\r\n    \"seatNumber\":500,\r\n    \"planeBrandId\":1\r\n\r\n\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/planes",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"planes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Aug 2023 15:46:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"planeName\": \"İstanbul\",\n    \"seatNumber\": 500,\n    \"planeBrand\": \"BOEING\"\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/planes/istanbul",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"planes",
+								"istanbul"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/planes/istanbul",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"planes",
+										"istanbul"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 12:58:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"İstanbul\",\n        \"seatNumber\": 500,\n        \"active\": true,\n        \"planeBrand\": {\n            \"id\": 1,\n            \"name\": \"BOEING\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "getAllplanes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/planes",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"planes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 13:23:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"Hürkuş\",\n        \"planeBrand\": \"BOEING\"\n    },\n    {\n        \"name\": \"İstanbul\",\n        \"planeBrand\": \"BOEING\"\n    },\n    {\n        \"planeBrand\": \"AIRBUS\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flight",
+			"item": [
+				{
+					"name": "FlightStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"flightStatus\": \"Rötarlı\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/flightStatus",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"flightStatus"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"flightStatus\": \"Rötarlı\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/flightStatus",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"flightStatus"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Aug 2023 21:35:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"flightStatus\": \"Rötarlı\"\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "flights",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"route\": 1,\r\n    \"airline\":1,\r\n    \"airport\":1,\r\n    \"plane\":1,\r\n    \"flightStatus\":1,\r\n     \"departureDate\":\"2022-09-22T16:16:01.389163\",\r\n      \"arrivalDate\":\"2022-09-22T16:16:01.389163\",\r\n      \"duration\":\"PT1H20M\"\r\n\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/flights",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"flights"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "flights",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"flightNumber\": \"BA2490\",\r\n    \"route\": 1,\r\n    \"airline\":1,\r\n    \"departureAirport\":1,\r\n     \"arrivalAirport\":2,\r\n    \"plane\":1,\r\n    \"flightStatus\":1,\r\n    \"departureDate\":\"2022-09-22T16:16:01.389163\",\r\n    \"arrivalDate\":\"2022-09-22T16:16:01.389163\",\r\n     \"duration\":\"PT1H20M\"\r\n\r\n\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/flights",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"flights"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 01:03:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"route\": \"adıyaman-istanbul\",\n    \"airline\": \"AnadoluJet\",\n    \"airport\": \"Adıyaman Havalimanı\",\n    \"plane\": \"Hürkuş\",\n    \"flightStatus\": \"Zamanında\",\n    \"departureDate\": \"2022-09-22T16:16:01.389163\",\n    \"arrivalDate\": \"2022-09-22T16:16:01.389163\"\n}"
+						},
+						{
+							"name": "flights",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"flightNumber\": \"BA2490\",\r\n    \"route\": 1,\r\n    \"airline\":1,\r\n    \"airport\":1,\r\n    \"plane\":1,\r\n    \"flightStatus\":1,\r\n    \"departureDate\":\"2022-09-22T16:16:01.389163\",\r\n    \"arrivalDate\":\"2022-09-22T16:16:01.389163\",\r\n     \"duration\":\"PT1H20M\"\r\n\r\n\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/flights",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"flights"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 16:29:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"error\": \"Bu veri daha önce  eklenmiş\",\n    \"isSuccess\": false\n}"
+						},
+						{
+							"name": "flights",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"flightNumber\": \"BA2490\",\r\n    \"route\": 1,\r\n    \"airline\":1,\r\n    \"departureAirport\":1,\r\n    \"arrivalAirport\":2,\r\n    \"plane\":1,\r\n    \"flightStatus\":1,\r\n    \"departureDate\":\"2022-09-22T16:16:01.389163\",\r\n    \"arrivalDate\":\"2022-09-22T16:16:01.389163\",\r\n     \"duration\":\"PT1H20M\"\r\n\r\n\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/flights",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"flights"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 17:12:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"flightNumber\": \"BA2490\",\n    \"route\": \"adıyaman-istanbul\",\n    \"airline\": \"AnadoluJet\",\n    \"arrivalAirport\": \"İstanbul Havaalanı\",\n    \"departureAirport\": \"Adıyaman Havalimanı\",\n    \"plane\": \"Hürkuş\",\n    \"flightStatus\": \"Zamanında\",\n    \"departureDate\": \"2022-09-22T16:16:01.389163\",\n    \"arrivalDate\": \"2022-09-22T16:16:01.389163\",\n    \"duration\": \"PT1H20M\"\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getAllFlights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/flights",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"flights"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/flights",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"flights"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 16:40:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"flightNumber\": \"BA2490\",\n        \"route\": \"adıyaman-istanbul\",\n        \"airline\": \"AnadoluJet\",\n        \"airport\": \"Adıyaman Havalimanı\",\n        \"plane\": \"Hürkuş\",\n        \"flightStatus\": \"Zamanında\",\n        \"departureDate\": \"2022-09-22T16:16:01\",\n        \"arrivalDate\": \"2022-09-22T16:16:01\",\n        \"duration\": \"PT1H20M\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "new",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Passenger",
+			"item": [
+				{
+					"name": "savePassenger",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31891170336\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"\r\n\r\n\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/passengers",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"passengers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "savePassengers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31891170336\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"\r\n\r\n\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/passengers",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"passengers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Aug 2023 20:02:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"firstName\": \"Büşra\",\n        \"lastName\": \"Çalışkan\",\n        \"tc\": \"31891170336\",\n        \"email\": \"adlibusra@gmail.com\",\n        \"phoneNumber\": \"05304029838\"\n    },\n    \"isSuccess\": true\n}"
+						},
+						{
+							"name": "savePassenger",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31891170336\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"\r\n\r\n\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/passengers",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"passengers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Aug 2023 00:05:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"id\": 1,\n        \"firstName\": \"Büşra\",\n        \"lastName\": \"Çalışkan\",\n        \"tc\": \"31891170336\",\n        \"email\": \"adlibusra@gmail.com\",\n        \"phoneNumber\": \"05304029838\"\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "TicketType",
+			"item": [
+				{
+					"name": "ticketType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ticketTypeName\": \"Aktif\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ticketType",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ticketType"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ticketTypeName\": \"iptal\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/ticketType",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticketType"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 09 Aug 2023 21:42:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"error\": \"Bu veri daha önce  eklenmiş\",\n    \"isSuccess\": false\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "addTicket",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"route\": 1,\r\n    \"airline\":1,\r\n    \"airport\":1,\r\n    \"plane\":1,\r\n    \"flightStatus\":1,\r\n     \"departureDate\":\"2022-09-22T16:16:01.389163\",\r\n      \"arrivalDate\":\"2022-09-22T16:16:01.389163\",\r\n      \"duration\":\"PT3H32M\"\r\n\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/api/ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n    \"passengerSaveRequest\": {\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31691170336\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"   \r\n},\r\n\r\n    \"flightId\":1,\r\n    \"ticketTypeName\":1,\r\n    \"cardSaveRequest\": {     \r\n    \"nameSurname\":\" Duru Çalışkan\",\r\n    \"cardNo\":\"22223111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n    },\r\n     \"ticketIssuedMoment\":\"2022-09-22T16:16:01.389163\"\r\n    \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ticket",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ticket"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "{{host}}/api/ticket",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ticketNumber\": \"1A1\" ,\r\n    \"passengerSaveRequest\": {\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31491170336\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"   \r\n},\r\n\r\n    \"flightId\":1,\r\n    \"ticketTypeName\":1,\r\n    \"cardSaveRequest\": {     \r\n    \"nameSurname\":\"Sümeyye Duru Çalışkan\",\r\n    \"cardNo\":\"2222-111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n    },\r\n     \"ticketIssuedMoment\":\"2022-09-22T16:16:01.389163\"\r\n    \r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/ticket",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 12 Aug 2023 22:25:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"ticketNumber\": \"1A1\",\n        \"flightPrice\": 1000,\n        \"ticketTypeName\": \"1A1\",\n        \"ticketIssuedMoment\": \"2022-09-22T16:16:01.389163\",\n        \"cardSaveResponse\": {\n            \"nameSurname\": \"Sümeyye Duru Çalışkan\",\n            \"cardNo\": \"222211******1111\",\n            \"expirationDate\": \"11/27\",\n            \"cvv\": \"111\"\n        },\n        \"passengerSaveResponse\": {\n            \"firstName\": \"Büşra\",\n            \"lastName\": \"Çalışkan\",\n            \"email\": \"adlibusra@gmail.com\",\n            \"phoneNumber\": \"05304029838\"\n        }\n    },\n    \"isSuccess\": true\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \r\n    \"passengerSaveRequest\": {\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31691170336\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"   \r\n},\r\n\r\n    \"flightId\":1,\r\n    \"ticketTypeName\":1,\r\n    \"cardSaveRequest\": {     \r\n    \"nameSurname\":\" Duru Çalışkan\",\r\n    \"cardNo\":\"22223111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n    },\r\n     \"ticketIssuedMoment\":\"2022-09-22T16:16:01.389163\"\r\n    \r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/ticket",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 12:28:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"ticketNumber\": \"b3f2ee57-2\",\n        \"flightPrice\": 1000,\n        \"ticketTypeName\": \"b3f2ee57-2\",\n        \"ticketIssuedMoment\": \"2022-09-22T16:16:01.389163\",\n        \"cardSaveResponse\": {\n            \"nameSurname\": \" Duru Çalışkan\",\n            \"cardNo\": \"222231*******1111\",\n            \"expirationDate\": \"11/27\",\n            \"cvv\": \"111\"\n        },\n        \"passengerSaveResponse\": {\n            \"firstName\": \"Büşra\",\n            \"lastName\": \"Çalışkan\",\n            \"email\": \"adlibusra@gmail.com\",\n            \"phoneNumber\": \"05304029838\"\n        }\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "{{host}}/api/ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ticketNumber\": \"1A\",\r\n    \"passengerSaveRequest\": {\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31693170436\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"   \r\n},\r\n\r\n    \"flightId\":1,\r\n    \"ticketTypeName\":1,\r\n    \"cardSaveRequest\": {     \r\n    \"nameSurname\":\" Duadru Çalışkan\",\r\n    \"cardNo\":\"22223111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n    },\r\n     \"ticketIssuedMoment\":\"2022-09-22T16:16:01.389163\"\r\n    \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ticket",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ticket"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "{{host}}/api/ticket",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \r\n    \"passengerSaveRequest\": {\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31693170536\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"   \r\n},\r\n\r\n    \"flightId\":1,\r\n    \"ticketTypeName\":1,\r\n    \"cardSaveRequest\": {     \r\n    \"nameSurname\":\" Duxdru Çalışkan\",\r\n    \"cardNo\":\"22223111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n    },\r\n     \"ticketIssuedMoment\":\"2022-09-22T16:16:01.389163\"\r\n    \r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/ticket",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Aug 2023 12:50:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"ticketNumber\": \"1107a030-0\",\n        \"flightPrice\": 1000,\n        \"ticketTypeName\": \"aktif\",\n        \"ticketIssuedMoment\": \"2022-09-22T16:16:01.389163\",\n        \"cardSaveResponse\": {\n            \"nameSurname\": \" Duxdru Çalışkan\",\n            \"cardNo\": \"222231*******1111\",\n            \"expirationDate\": \"11/27\",\n            \"cvv\": \"111\"\n        },\n        \"passengerSaveResponse\": {\n            \"firstName\": \"Büşra\",\n            \"lastName\": \"Çalışkan\",\n            \"email\": \"adlibusra@gmail.com\",\n            \"phoneNumber\": \"05304029838\"\n        }\n    },\n    \"isSuccess\": true\n}"
+						},
+						{
+							"name": "{{host}}/api/ticket",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ticketNumber\": \"1A\",\r\n    \"passengerSaveRequest\": {\r\n    \"firstName\": \"Büşra\",\r\n    \"lastName\": \"Çalışkan\",\r\n    \"tc\":\"31693170436\",\r\n    \"email\":\"adlibusra@gmail.com\",\r\n    \"phoneNumber\":\"05304029838\"   \r\n},\r\n\r\n    \"flightId\":1,\r\n    \"ticketTypeName\":1,\r\n    \"cardSaveRequest\": {     \r\n    \"nameSurname\":\" Duadru Çalışkan\",\r\n    \"cardNo\":\"22223111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n    },\r\n     \"ticketIssuedMoment\":\"2022-09-22T16:16:01.389163\"\r\n    \r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/ticket",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Aug 2023 00:23:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"ticketNumber\": \"1A\",\n        \"ticketTypeName\": \"iptal\",\n        \"ticketIssuedMoment\": \"2022-09-22T16:16:01.389163\",\n        \"cardSaveResponse\": {\n            \"nameSurname\": \" Duadru Çalışkan\",\n            \"cardNo\": \"222231*******1111\",\n            \"expirationDate\": \"11/27\",\n            \"cvv\": \"111\"\n        },\n        \"passengerSaveResponse\": {\n            \"firstName\": \"Büşra\",\n            \"lastName\": \"Çalışkan\",\n            \"email\": \"adlibusra@gmail.com\",\n            \"phoneNumber\": \"05304029838\"\n        }\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "ticket/search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ticketNumber\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/ticket/search",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ticket",
+								"search"
+							],
+							"query": [
+								{
+									"key": "ticketNumber",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ticketNumber\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/ticket/search",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticket",
+										"search"
+									],
+									"query": [
+										{
+											"key": "ticketNumber",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Aug 2023 00:41:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": \"no message available.\",\n    \"data\": [\n        {\n            \"ticketNumber\": \"1A\",\n            \"ticketIssuedMoment\": \"2022-09-22T16:16:01\"\n        }\n    ],\n    \"isSuccess\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "deletTicket",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/ticket/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"ticket",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/ticket/3",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticket",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Aug 2023 01:02:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "deletTicket",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/ticket/3",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"ticket",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Aug 2023 01:06:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": \"no message available.\",\n    \"data\": \"Bilet iptal edilmiştir.\",\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CreditCard",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameSurname\":\"Asiye Busoşra Çalışkan\",\r\n    \"cardNo\":\"1111-111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/creditCard",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"creditCard"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameSurname\":\"Asiye Busoşra Çalışkan\",\r\n    \"cardNo\":\"1111-111111111s111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/creditCard",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"creditCard"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Aug 2023 23:27:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"error\": \"Validation failed for classes [io.upschool.entity.CreditCard] during persist time for groups [jakarta.validation.groups.Default, ]\\nList of constraint violations:[\\n\\tConstraintViolationImpl{interpolatedMessage=' The credit card number is invalid', propertyPath=cardNo, rootBeanClass=class io.upschool.entity.CreditCard, messageTemplate=' The credit card number is invalid'}\\n]\",\n    \"isSuccess\": false\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameSurname\":\"Asiye Busoşra Çalışkan\",\r\n    \"cardNo\":\"1111111111211111\",\r\n    \"expirationDate\":\"11/27\",\r\n    \"cvv\": \"111\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/creditCard",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"creditCard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Aug 2023 23:37:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": \"no message available.\",\n    \"data\": {\n        \"nameSurname\": \"Asiye Busoşra Çalışkan\",\n        \"cardNo\": \"1111111111211111\",\n        \"expirationDate\": \"11/27\",\n        \"cvv\": \"111\"\n    },\n    \"isSuccess\": true\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
